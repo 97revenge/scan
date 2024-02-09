@@ -111,15 +111,16 @@ export const VisionContainer = () => {
   );
 
   return (
-    <div className="flex flex-col h-[95vh]">
-      <Card className="flex flex-col flex-1 overflow-hidden">
+    <div className="  flex flex-col h-[95vh]">
+      <Card className="  flex flex-col flex-1 overflow-hidden">
         {userQuestion && (
           <div className="bg-primary/20 p-4 flex space-x-4">
             <Button
               type={`button`}
-              variant={`icon`}
+              variant={"ghost"}
               onClick={handleRefresh}
               disabled={loading}
+              className="bg-red-200"
             >
               <RefreshCcw className={`w-4 h-4`} />
             </Button>

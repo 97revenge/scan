@@ -57,6 +57,7 @@ export const MarkdownViewer: React.FC<IMarkdownViewerProps> = React.memo(
       tr: TrComponent,
       th: ThComponent,
       td: TdComponent,
+      comment: Comment,
     };
 
     return (
