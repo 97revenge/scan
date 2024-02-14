@@ -105,11 +105,7 @@ export const CommonForm: React.FC<CommonFormProps> = ({
         placeholder={placeholder}
       />
       <div className="mt-auto">
-        <Button
-          type="submit"
-          variant={`icon`}
-          disabled={!isSubmittable || loading}
-        >
+        <Button type="submit" disabled={!isSubmittable || loading}>
           {loading ? (
             <Loader className="animate-spin" />
           ) : (

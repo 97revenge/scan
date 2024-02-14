@@ -103,7 +103,7 @@ export const ControlProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export const useControlContext = () => {
+export const useControlContext = (): ControlContextState => {
   const context = useContext(ControlContext);
   if (context === undefined) {
     throw new Error("useControlContext must be used within a ControlProvider");

@@ -8,7 +8,7 @@ import { Providers } from "@/providers";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 
 export const metadata: Metadata = {
-  title: "Simple Gemini Vision Playground",
+  title: "scan",
   description: "A Simple Playground for Gemini Vision",
 };
 

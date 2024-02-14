@@ -36,22 +36,12 @@ export const MessageItem: React.FC<MessageItemProps> = memo(
             </div>
             <div className={`space-x-6`}>
               {!isLoading && isLastMessage && isUser && (
-                <Button
-                  variant="icon"
-                  type="button"
-                  size="sm"
-                  onClick={onRefresh}
-                >
+                <Button type="button" size="sm" onClick={onRefresh}>
                   <RefreshCw className="w-4 h-4" />
                 </Button>
               )}
               {!isLoading && isLastMessage && (
-                <Button
-                  variant="icon"
-                  type="button"
-                  size="sm"
-                  onClick={onRemove}
-                >
+                <Button type="button" size="sm" onClick={onRemove}>
                   <Trash className="w-4 h-4" />
                 </Button>
               )}
