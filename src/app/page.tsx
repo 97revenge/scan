@@ -16,7 +16,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 export default function Home() {
   const [textValue, setTextValue] = useState<string>(
-    "Entenda esta imagem . é um recibo ou uma nota fiscal. comverta para .csv "
+    " Understand the image. you are going to receive a image and you will capture some information from it. I want a data table with the following data COMPANY NAME | COMPLETE COMPANY ADDRESS | CNPJ NUMBER | DATE AND HOUR | ITEN NAME | ITEM QTY | ITEM TOTAL PRICE, repeat data COMPANY NAME | COMPLETE COMPANY ADDRESS | CNPJ NUMBER | DATE AND HOUR on each line. Only ITEN NAME | ITEM QTY | ITEM TOTAL PRICE should change on each line. Delivery only the data table with no previous or after text. "
   );
   const [imageParts, setImageParts] = useState<Array<Object>>([]);
   const [apikeys, setApikeys] = useState<string>("");
